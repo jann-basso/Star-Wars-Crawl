@@ -1,0 +1,57 @@
+/* --- SPECIFIC FOR BECODE -- */
+
+/* title and logo */
+#header {
+    position: absolute;
+    width: 550px;
+    text-align: center;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+img {
+    width: 25%;    
+}
+
+
+/* text and animation */
+#container {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    top: -10px;
+    perspective: 500px;
+}
+
+
+article {
+    color: yellow;
+    font-size: 300%;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: justify;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(40deg);
+    animation: article 100s linear;
+}
+
+
+@keyframes article {
+    0% {
+        top: 0;
+        transform: rotateX(20deg) translateZ(0);
+    }
+    100% {
+        top: -5000px;
+        transform: rotateX(25deg) translateZ(-2500px)
+    }
+}
